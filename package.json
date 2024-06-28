@@ -1,0 +1,24 @@
+{
+  "name": "coords-chisel",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "author": "Luca Tabone <taboneluca3@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tabone/coords-chisel.git"
+  },
+  "scripts": {
+    "dev": "ts-node index.ts",
+    "build": "tsc -p ."
+  },
+  "devDependencies": {
+    "prettier": "^3.3.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  }
+}
