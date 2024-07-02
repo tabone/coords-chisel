@@ -7,7 +7,7 @@ export const zCoordinate = z.object({
 
 export const zCoordinateID =
   z.custom<`${TCoordinate["x"]}:${TCoordinate["y"]}`>(
-    (val) => typeof val === "string" && /^\d+:\d+$/.test(val),
+    (val) => typeof val === "string" && /^-?\d+:-?\d+$/.test(val),
   );
 
 export type TCoordinate = z.infer<typeof zCoordinate>;
